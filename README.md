@@ -19,5 +19,20 @@ Notes:
 
 3. The leading "t" of each variable has been changed to read "Time"
 
-The tidy dataset is arranged as: TBD
+### run_analysis script:
+
+The major steps in the script is as follows:
+1. Read in the test, training, subject and features files
+2. Combines the data:
+    a. Simply column bind the activity, subject and measurement sets of the training data
+    b. Simply column bind the activity, subject and measurement sets of the test data
+    c. Finally row bind the training and test data together
+3. The script then names all of the columns of the combined data set using the names in the features.txt file. It names the first and second column as activity and subjectnum since that was the order in which the data were combined.
+4. It then extracts the columns that contain the strings "mean" and "std". It uses grep for this.
+5. The script then starts tidying up the data:
+    a. It first names all of the activities with useful names rather than numbers.
+    b. It then cleans up the columns names trying as much as practical to stick to tidy data naming conventions
+6. In the final steps, the script computes the average of each column of the data for every combination of subject and activity
+7. It finally writes out this cleaned up data set to a file called: tidy2.txt in the current working directory
+
 
