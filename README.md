@@ -2,6 +2,7 @@
 
 ## Data from: Human Activity Recognition Using Smartphones Dataset
 
+
     The R script contained in this repo will read in the training and test
 datasets from Samsung's *Human Activity Recognition Using Smartphones Dataset*
 (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and write out a tidy data set containing the average for the meand and
