@@ -1,7 +1,6 @@
 ### Codebook for Tidydata
 
-This codebook describes each column of the tidy data set that is created by
-the R script: run_analysis()
+This codebook describes the type, Units and a Description for each column of the tidy data set that is created by the R script: run_analysis()
 
 #### Types:
   * **activity**: integer
@@ -13,76 +12,43 @@ the R script: run_analysis()
   * **subjectnum**: Not applicable
   * **All Others**: Hz
 
+#### Value Range:
+  * **activity**: One of: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
+  * **subjectnum**: Between 1 and 30
+  * **All Others**: Between -1 and 1
 
-  * **activity**   - The activity performed by the subject when the measurements were taken. The activities are: laying, sitting, standing, walking, walking_downstairs, walking_upstairs 
-  * **subjectnum**    - The subject on whom the corresponding measurement was performed. This ranges from 1 - 30     
-  * **TimeBodyAccMeanX**    - Average of the means of the time domain measurement of the body acceleration on the X-axis
-  * **TimeBodyAccMeanY**    - Average of the means of the time domain measurement of the body acceleration on the Y-axis
-  * **TimeBodyAccMeanZ**    - Average of the means of the time domain measurement of the body acceleration on the Z-axis
-  * **TimeBodyAccStdX**     - Average of the standard dev  of the time domain measurement of the body acceleration on the X-axis
-  * **TimeBodyAccStdY**     - Average of the standard dev  of the time domain measurement of the body acceleration on the Y-axis
-  * **TimeBodyAccStdZ**     - Average of the standard dev  of the time domain measurement of the body acceleration on the Z-axis
-  * **TimeGravityAccMeanX** - Average of the means of the time domain measurement of the gravity acceleration on the X-axis
-  * **TimeGravityAccMeanY** - Average of the means of the time domain measurement of the gravity acceleration on the Y-axis
-  * **TimeGravityAccMeanZ** - Average of the means of the time domain measurement of the gravity acceleration on the Z-axis
-  * **TimeGravityAccStdX**  - Average of the standard dev  of the time domain measurement of the gravity acceleration on the X-axis
-  * **TimeGravityAccStdY**  - Average of the standard dev  of the time domain measurement of the gravity acceleration on the Y-axis
-  * **TimeGravityAccStdZ**  - Average of the standard dev  of the time domain measurement of the gravity acceleration on the Z-axis 
-  * **TimeBodyAccJerkMeanX**  - Average of the means of the time domain measurement of the body linear acceleration on the X-axis
-  * **TimeBodyAccJerkMeanY**  - Average of the means of the time domain measurement of the body linear acceleration on the Y-axis
-  * **TimeBodyAccJerkMeanZ**  - Average of the means of the time domain measurement of the body linear acceleration on the Z-axis
-  * **TimeBodyAccJerkStdX**  - Average of the standard dev of the time domain measurement of the body linear acceleration on the X-axis
-  * **TimeBodyAccJerkStdY**  - Average of the standard dev of the time domain measurement of the body linear acceleration on the Y-axis
-  * **TimeBodyAccJerkStdZ**  - Average of the standard dev of the time domain measurement of the body linear acceleration on the Z-axis
-  * **TimeBodyGyroMeanX**    - Average of the means of the time domain measurement of the body angular velocity on the X-axis
-  * **TimeBodyGyroMeanY**    - Average of the means of the time domain measurement of the body angular velocity on the Y-axis
-  * **TimeBodyGyroMeanZ**    - Average of the means of the time domain measurement of the body angular velocity on the Z-axis
-  * **TimeBodyGyroStdX**     - Average of the standard dev of the time domain measurement of the body angular velocity on the X-axis
-  * **TimeBodyGyroStdY**     - Average of the standard dev of the time domain measurement of the body angular velocity on the Y-axis
-  * **TimeBodyGyroStdZ**     - Average of the standard dev of the time domain measurement of the body angular velocity on the Z-axis
-  * **TimeBodyGyroJerkMeanX**
-  * **TimeBodyGyroJerkMeanY**
-  * **TimeBodyGyroJerkMeanZ**
-  * **TimeBodyGyroJerkStdX**
-  * **TimeBodyGyroJerkStdY**
-  * **TimeBodyGyroJerkStdZ**
-  * **TimeBodyAccMagMean**
-  * **TimeBodyAccMagStd**
-  * **TimeGravityAccMagMean**
-  * **TimeGravityAccMagStd**
-  * **TimeBodyAccJerkMagMean**
-  * **TimeBodyAccJerkMagStd**
-  * **TimeBodyGyroMagMean**
-  * **TimeBodyGyroMagStd**
-  * **TimeBodyGyroJerkMagMean**
-  * **TimeBodyGyroJerkMagStd**
-  * **FreqBodyAccMeanX**
-  * **FreqBodyAccMeanY**
-  * **FreqBodyAccMeanZ**
-  * **FreqBodyAccSTimedX**
-  * **FreqBodyAccSTimedY**
-  * **FreqBodyAccSTimedZ**
-  * **FreqBodyAccMeanFreqX**
-  * **FreqBodyAccMeanFreqY**
-  * **FreqBodyAccMeanFreqZ**
-  * **FreqBodyAccJerkMeanX**
-  * **FreqBodyAccJerkMeanY**
-  * **FreqBodyAccJerkMeanZ**
-  * **FreqBodyAccJerkSTimedX**
-  * **FreqBodyAccJerkSTimedY**
-  * **FreqBodyAccJerkSTimedZ**
-  * **FreqBodyAccJerkMeanFreqX**
-  * **FreqBodyAccJerkMeanFreqY**
-  * **FreqBodyAccJerkMeanFreqZ**
-  * **FreqBodyGyroMeanX**
-  * **FreqBodyGyroMeanY**
-  * **FreqBodyGyroMeanZ**
-  * **FreqBodyGyroSTimedX**
-  * **FreqBodyGyroSTimedY**
-  * **FreqBodyGyroSTimedZ**
-  * **FreqBodyGyroMeanFreqX**
-  * **FreqBodyGyroMeanFreqY**
-  * **FreqBodyGyroMeanFreqZ**
+#### Description:
+  * **activity**   - The activity performed by the subject when the measurements were taken.
+  * **subjectnum**    - The subject on whom the corresponding measurement was performed.
+  * **TimeBodyAccMeanX/Y/Z**    - Average of the Means of Time Domain Signals from the body motion component of the Accelerometer - along X/Y/Z Axis
+  * **TimeBodyAccStdX/Y/Z**     - Average of the Standard Deviations of Time Domain Signals from the body motion component of the Accelerometer - along X/Y/Z Axis
+  * **TimeGravityAccMeanX/Y/Z** - Average of the Means of Time Domain Signals from the gravitational component of the Accelerometer - along X/Y/Z Axis
+  * **TimeGravityAccStdX/Y/Z**  - Average of the Standard Deviations of Time Domain Signals from the gravitational component of the Accelerometer - along X/Y/Z Axis
+  * **TimeBodyAccJerkMeanX/Y/Z**  - Average of the Means of Time Domain Jerk Signal from the body motion component of the Accelerometer - along X/Y/Z Axis
+  * **TimeBodyAccJerkStdX/Y/Z** - Average of the Standard Deviations of Time Domain Jerk Signal from the body motion component of the Accelerometer - along X/Y/Z Axis
+  * **TimeBodyGyroMeanX/Y/Z**   - Average of the Means of Time Domain Signals from the body motion component of the Gyroscope - along X/Y/Z Axis
+  * **TimeBodyGyroStdX/Y/Z**    - Average of the Standard Deviations of Time Domain Signals from the body motion component of the Gyroscope - along X/Y/Z Axis
+  * **TimeBodyGyroJerkMeanX/Y/Z** - Average of the Means of Time Domain Jerk Signals from the body motion component of the Gyroscope - along X/Y/Z Axis
+  * **TimeBodyGyroJerkStdX/Y/Y**  - Average of the Standard Deviations of Time Domain Jerk Signals from the body motion component of the Gyroscope - along X/Y/Z Axis
+  * **TimeBodyAccMagMean** - Average of the Means of Magnitude of Time Domain Signal Vectors from the body motion component of the Accelerometer 
+  * **TimeBodyAccMagStd** - Average of the Standard Deviations of Magnitude of Time Domain Signal Vectors from the body motion component of the Accelerometer 
+  * **TimeGravityAccMagMean** - Average of the Means of Magnitude of Time Domain Signal Vectors from the gravitational component of the Accelerometer 
+  * **TimeGravityAccMagStd** - Average of the Standard Deviations of Magnitude of Time Domain Signal Vectors from the gravitational component of the Accelerometer 
+  * **TimeBodyAccJerkMagMean** - Average of the Means of Magnitude of Time Domain Jerk Signal Vectors from the body motion component of the Accelerometer 
+  * **TimeBodyAccJerkMagStd** - Average of the Standard Deviations of Magnitude of Time Domain Jerk Signal Vectors from the body motion component of the Accelerometer 
+  * **TimeBodyGyroMagMean** - Average of the Means of Magnitude of Time Domain Signal Vectors from the body motion component of the Gyroscope 
+  * **TimeBodyGyroMagStd** - Average of the Standard Deviations of Magnitude of Time Domain Signal Vectors from the body motion component of the Gyroscope 
+  * **TimeBodyGyroJerkMagMean** - Average of the Means of Magnitude of Time Domain Jerk Signal Vectors from the body motion component of the Gyroscope 
+  * **TimeBodyGyroJerkMagStd** - Average of the Standard Deviations of Magnitude of Time Domain Jerk Signal Vectors from the body motion component of the Gyroscope 
+  * **FreqBodyAccMeanX/Y/Y**
+  * **FreqBodyAccSTimedX/Y/Y**
+  * **FreqBodyAccMeanFreqX/Y/Y**
+  * **FreqBodyAccJerkMeanX/Y/Y**
+  * **FreqBodyAccJerkSTimedX/Y/Y**
+  * **FreqBodyAccJerkMeanFreqX/Y/Y**
+  * **FreqBodyGyroMeanX/Y/Y**
+  * **FreqBodyGyroSTimedX/Y/Y**
+  * **FreqBodyGyroMeanFreqX/Y/Y**
   * **FreqBodyAccMagMean**
   * **FreqBodyAccMagSTimed**
   * **FreqBodyAccMagMeanFreq**
