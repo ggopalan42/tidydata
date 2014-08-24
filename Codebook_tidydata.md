@@ -18,18 +18,18 @@ the R script: run_analysis()
   * **TimeGravityAccStdX**  - Average of the standard dev  of the time domain measurement of the gravity acceleration on the X-axis
   * **TimeGravityAccStdY**  - Average of the standard dev  of the time domain measurement of the gravity acceleration on the Y-axis
   * **TimeGravityAccStdZ**  - Average of the standard dev  of the time domain measurement of the gravity acceleration on the Z-axis 
-  * **TimeBodyAccJerkMeanX**
-  * **TimeBodyAccJerkMeanY**
-  * **TimeBodyAccJerkMeanZ**
-  * **TimeBodyAccJerkStdX**
-  * **TimeBodyAccJerkStdY**
-  * **TimeBodyAccJerkStdZ**
-  * **TimeBodyGyroMeanX**
-  * **TimeBodyGyroMeanY**
-  * **TimeBodyGyroMeanZ**
-  * **TimeBodyGyroStdX**
-  * **TimeBodyGyroStdY**
-  * **TimeBodyGyroStdZ**
+  * **TimeBodyAccJerkMeanX**  - Average of the means of the time domain measurement of the body linear acceleration on the X-axis
+  * **TimeBodyAccJerkMeanY**  - Average of the means of the time domain measurement of the body linear acceleration on the Y-axis
+  * **TimeBodyAccJerkMeanZ**  - Average of the means of the time domain measurement of the body linear acceleration on the Z-axis
+  * **TimeBodyAccJerkStdX**  - Average of the standard dev of the time domain measurement of the body linear acceleration on the X-axis
+  * **TimeBodyAccJerkStdY**  - Average of the standard dev of the time domain measurement of the body linear acceleration on the Y-axis
+  * **TimeBodyAccJerkStdZ**  - Average of the standard dev of the time domain measurement of the body linear acceleration on the Z-axis
+  * **TimeBodyGyroMeanX**    - Average of the means of the time domain measurement of the body angular velocity on the X-axis
+  * **TimeBodyGyroMeanY**    - Average of the means of the time domain measurement of the body angular velocity on the Y-axis
+  * **TimeBodyGyroMeanZ**    - Average of the means of the time domain measurement of the body angular velocity on the Z-axis
+  * **TimeBodyGyroStdX**     - Average of the standard dev of the time domain measurement of the body angular velocity on the X-axis
+  * **TimeBodyGyroStdY**     - Average of the standard dev of the time domain measurement of the body angular velocity on the Y-axis
+  * **TimeBodyGyroStdZ**     - Average of the standard dev of the time domain measurement of the body angular velocity on the Z-axis
   * **TimeBodyGyroJerkMeanX**
   * **TimeBodyGyroJerkMeanY**
   * **TimeBodyGyroJerkMeanZ**
