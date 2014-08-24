@@ -1,7 +1,17 @@
-### Codebook for Tidydata abc
+### Codebook for Tidydata
 
 This codebook describes each column of the tidy data set that is created by
 the R script: run_analysis()
+
+#### Types:
+  * **activity**: integer
+  * **subjectnum**: string
+  * **All Others**: numeric
+
+#### Units:
+  * **activity**: Not applicable
+  * **subjectnum**: Not applicable
+  * **All Others**: Hz
 
 
   * **activity**   - The activity performed by the subject when the measurements were taken. The activities are: laying, sitting, standing, walking, walking_downstairs, walking_upstairs 
