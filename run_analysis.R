@@ -60,8 +60,8 @@ run_analysis <- function () {
     colnames(tidy1)<-sub("mean","Mean",colnames(tidy1))
     colnames(tidy1)<-sub("std","Std",colnames(tidy1))
     colnames(tidy1)<-gsub("-|\\()","",colnames(tidy1))
-    colnames(tidy1)[3:81]<-sub("f","Freq",colnames(tidy1[3:81]))
-    colnames(tidy1)[3:81]<-sub("t","Time",colnames(tidy1[3:81]))
+    colnames(tidy1)[3:81]<-sub("^f","Freq",colnames(tidy1[3:81]))
+    colnames(tidy1)[3:81]<-sub("^t","Time",colnames(tidy1[3:81]))
 
     # Now create a second tidy dataset that computes the mean of
     # each of the meand and std variables for every combination
